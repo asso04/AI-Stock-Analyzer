@@ -1,7 +1,7 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-model_path = r"Phi_3.5_instruct"
+model_path = r"Phi_3.5_instruct/"
 
 device_phi = "cuda:0"
 tokenizer = AutoTokenizer.from_pretrained(model_path)
