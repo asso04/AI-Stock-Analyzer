@@ -167,4 +167,4 @@ It does not constitute financial advice. Always perform independent analysis bef
 
 ## 📄 License
 
-This project is proprietary. Commercial use requires explicit permission from the author.
+Commercial use requires explicit permission from the author.
