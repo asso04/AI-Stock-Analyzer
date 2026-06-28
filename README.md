@@ -143,6 +143,18 @@ Each analysis includes:
 
 ---
 
+⚡ Hardware Requirements
+
+This system is designed for GPU execution.
+
+- CUDA-enabled GPU required for optimal performance
+- 4-bit quantized inference (bitsandbytes)
+- Flash Attention 2 support for improved efficiency
+
+CPU execution is supported but not optimized and may result in high latency.
+
+---
+
 ## ⚠️ Disclaimer
 
 This project is for **educational and research purposes only**.
