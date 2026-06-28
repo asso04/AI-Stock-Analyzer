@@ -20,17 +20,19 @@ The system retrieves real-time financial data, generates interactive stock chart
 ## 📁 Project Structure
 
 ```text
-project/
+AI-Stock-Analyzer/
 │
-├── ai.py              # LLM financial analysis (Phi-3.5 prompt engine)
-├── finance.py         # Yahoo Finance data retrieval
-├── charts.py          # Plotly chart generation
-├── app.py             # Main application entry point
-├── requirements.txt   # Project dependencies
+├── project/
+│   ├── ai.py                 # LLM financial analysis (Phi-3.5 prompt engine)
+│   ├── finance.py           # Yahoo Finance data retrieval
+│   ├── charts.py            # Plotly chart generation
+│   ├── app.py               # Main application entry point
+│   │
+│   └── Phi_3.5_instruct/    # Modello locale (o link simbolico)
 │
-├── Phi_3.5_instruct/  # Local LLM model directory
-│
-└── README.md
+├── requirements.txt         # Dependencies (FUORI dal package)
+├── README.md                # Documentazione progetto
+├── LICENSE                  # Licenza
 ```
 
 ---
