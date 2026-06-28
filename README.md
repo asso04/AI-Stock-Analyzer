@@ -24,15 +24,15 @@ AI-Stock-Analyzer/
 │
 ├── project/
 │   ├── ai.py                 # LLM financial analysis (Phi-3.5 prompt engine)
-│   ├── finance.py           # Yahoo Finance data retrieval
+│   ├── app.py           # Yahoo Finance data retrieval
 │   ├── charts.py            # Plotly chart generation
-│   ├── app.py               # Main application entry point
+│   ├── finance.py               # Main application entry point
 │   │
 │   └── Phi_3.5_instruct/    # Modello locale (o link simbolico)
 │
-├── requirements.txt         # Dependencies (FUORI dal package)
-├── README.md                # Documentazione progetto
-├── LICENSE                  # Licenza
+├── README.md         # Dependencies (FUORI dal package)
+├── license.txt               # Documentazione progetto
+├── requirements.txt                 # Licenza
 ```
 
 ---
