@@ -1,0 +1,9 @@
+torch
+transformers
+accelerate
+bitsandbytes
+flash-attn
+plotly
+yfinance
+pandas
+numpy
