@@ -63,7 +63,7 @@ def analyze(company, price, pe, market_cap, dividend):
     with torch.no_grad():
         output = model.generate(
             **inputs,
-            max_new_tokens=650,
+            max_new_tokens=700,
             temperature=0.1,
             top_p=0.9,
             do_sample=True
