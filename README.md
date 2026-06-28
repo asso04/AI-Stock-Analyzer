@@ -2,44 +2,59 @@
 
 An AI-powered stock analysis tool built with **Python**, **Phi-3.5 Instruct**, **Hugging Face Transformers**, **yFinance**, and **Plotly**.
 
-The application automatically retrieves financial data for a stock, generates an interactive price chart, and produces a concise financial report using a local Large Language Model (LLM).
+The system retrieves real-time financial data, generates interactive stock charts, and produces structured investment analysis using a local Large Language Model.
 
 ---
 
-## Features
+## 🚀 Features
 
-* Retrieve real-time stock information using **Yahoo Finance**
-* Generate interactive stock price charts with **Plotly**
-* Perform AI-powered financial analysis using **Microsoft Phi-3.5 Instruct**
-* Run completely locally (no external AI APIs required)
+* Real-time stock data via **Yahoo Finance**
+* AI financial analysis using **Microsoft Phi-3.5 Instruct**
+* Interactive price charts with **Plotly**
+* Fully local inference (no external AI APIs)
 * Structured investment reports
-* Easy to extend with additional financial indicators
+* Easily extendable architecture
 
 ---
 
-## Technologies
+## 📁 Project Structure
 
-* Python 3.11+
-* PyTorch
-* Transformers
-* BitsAndBytes (4-bit quantization)
-* Flash Attention 2
-* Plotly
-* yFinance
+```text
+project/
+│
+├── ai.py              # LLM financial analysis (Phi-3.5 prompt engine)
+├── finance.py         # Yahoo Finance data retrieval
+├── charts.py          # Plotly chart generation
+├── app.py             # Main application entry point
+├── requirements.txt   # Project dependencies
+│
+├── Phi_3.5_instruct/  # Local LLM model directory
+│
+└── README.md
+```
 
 ---
 
-## Installation
+## 🧠 How It Works
+
+1. `app.py` is executed as the entry point
+2. Stock data is fetched via `finance.py`
+3. Historical prices are visualized using `charts.py`
+4. Financial metrics are sent to the LLM in `ai.py`
+5. The model returns a structured financial report
+
+---
+
+## 🛠️ Installation
 
 Clone the repository:
 
 ```bash
 git clone https://github.com/yourusername/AI-Stock-Analyzer.git
-
 cd AI-Stock-Analyzer
 ```
 
-Install the dependencies:
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -47,7 +62,7 @@ pip install -r requirements.txt
 
 ---
 
-## Required Libraries
+## 📦 Requirements
 
 ```text
 torch
@@ -61,83 +76,81 @@ yfinance
 
 ---
 
-## Download the Model
+## 🤖 Model Setup
 
-Download **Microsoft Phi-3.5 Instruct** from Hugging Face and place it inside:
+Download **Phi-3.5 Instruct** from Hugging Face and place it in:
 
 ```text
 Phi_3.5_instruct/
 ```
 
-Update the path inside `ai.py` if necessary.
+Update the path inside `ai.py` if needed.
 
 ---
 
-## Usage
+## ▶️ Usage
+
+Run the application:
+
+```bash
+python app.py
+```
+
+Example usage inside code:
 
 ```python
-from main import stock
+from app import stock
 
 result = stock("AAPL")
 
 print(result["analysis"])
 ```
 
-You can replace `"AAPL"` with any supported ticker:
+Supported tickers:
 
-```python
-stock("MSFT")
-stock("NVDA")
-stock("TSLA")
-stock("AMZN")
-stock("META")
+```text
+AAPL, MSFT, NVDA, TSLA, AMZN, META
 ```
 
 ---
 
-## AI Prompt
+## 📈 Output Components
 
-The language model is instructed to generate only structured financial reports.
+Each analysis includes:
 
-Output format:
-
-* Overview
-* Financial Health
-* Strengths
-* Weaknesses
-* Risks
-* Valuation
-* Technical Analysis
-* Final Decision
+* Company overview
+* Financial health
+* Strengths & weaknesses
+* Risk assessment
+* Valuation analysis
+* Technical analysis
+* Final decision
 * Score (0–10)
-* Recommendation (BUY / HOLD / SELL)
-
-The prompt also restricts:
-
-* introductions
-* macroeconomic discussions
-* generic explanations
-* unstructured output
+* BUY / HOLD / SELL recommendation
 
 ---
 
-## Future Improvements
+## 🔮 Future Improvements
 
-* Financial ratios dashboard
-* Candlestick charts
+* Candlestick charts (OHLC)
 * Technical indicators (RSI, MACD, Bollinger Bands)
-* Earnings reports
 * News sentiment analysis
-* Portfolio tracking
-* Streamlit or Flask web interface
-* Multi-stock comparison
+* Portfolio tracking system
+* Web dashboard (Streamlit / FastAPI)
+* Multi-stock comparison engine
 * PDF report export
-* Historical performance scoring
+* Backtesting module
 
 ---
 
-## Disclaimer
+## ⚠️ Disclaimer
 
-The generated analyses do **not** constitute financial advice. Always conduct your own research before making investment decisions.
+This project is for **educational and research purposes only**.
 
+It does not constitute financial advice. Always perform independent analysis before making investment decisions.
 
+---
+
+## 📄 License
+
+This project is proprietary. Commercial use requires explicit permission from the author.
