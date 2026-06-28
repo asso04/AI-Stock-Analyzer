@@ -74,6 +74,8 @@ bitsandbytes
 flash-attn
 plotly
 yfinance
+pandas
+numpy
 ```
 
 ---
