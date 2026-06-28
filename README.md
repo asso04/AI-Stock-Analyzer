@@ -50,7 +50,7 @@ project/
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/AI-Stock-Analyzer.git
+git clone https://github.com/asso04/AI-Stock-Analyzer.git
 cd AI-Stock-Analyzer
 ```
 
