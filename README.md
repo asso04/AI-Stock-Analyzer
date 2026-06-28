@@ -161,6 +161,8 @@ CPU execution is supported but not optimized and may result in high latency.
 
 This project is for **educational and research purposes only**.
 
+The LLM may continue generating or truncate its output, and it may be replaced by a more performant model.
+
 It does not constitute financial advice. Always perform independent analysis before making investment decisions.
 
 ---
