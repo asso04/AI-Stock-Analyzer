@@ -95,13 +95,13 @@ Update the path inside `ai.py` if needed.
 Run the application:
 
 ```bash
-python app.py
+python -m project.app
 ```
 
 Example usage inside code:
 
 ```python
-from app import stock
+from project.app import stock
 
 result = stock("AAPL")
 
