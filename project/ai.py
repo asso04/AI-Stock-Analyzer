@@ -72,7 +72,7 @@ def analyze(company, price, pe, market_cap, dividend):
     generated_tokens = output[0][inputs["input_ids"].shape[-1]:]
     decoded = tokenizer.decode(generated_tokens, skip_special_tokens=True).strip()
 
-    # safety cleanup (evita output fuori formato)
+    # safety cleanup 
     if "Instruction" in decoded:
         decoded = decoded.split("Instruction")[0]
 
